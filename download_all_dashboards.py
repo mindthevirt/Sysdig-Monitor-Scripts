@@ -82,8 +82,8 @@ for sdc_token in sdc_tokens:
         f.write(json.dumps(db))
         print "Name: %s, # Charts: %d" % (db['name'], len(db['items']))
         f.close()
-
-    zipf = zipfile.ZipFile(sdc_token, 'w', zipfile.ZIP_DEFLATED)
+    zipname = sdc_token + '.zip'
+    zipf = zipfile.ZipFile(zipname, 'w', zipfile.ZIP_DEFLATED)
     zipdir(token_dir, zipf)
     zipf.close()
 
