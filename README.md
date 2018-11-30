@@ -18,8 +18,7 @@ Usage:
 
 
 ## download_alerts.py
-Download all alerts of a single user or a group of users.
-The ZIP files (alerts_API-KEY.zip)  need to be in the same folder where the script is being execute from.
+The alerts will be stored in json files (dashboards_API-KEY.json), which are created per API user and stored where the script is being executed from.
 
 Usage:
 ```python download_alerts.py <sysdig-token/token-json-file>```
@@ -27,7 +26,7 @@ Usage:
 
 ## restore_alerts.py
 Restore all alerts of a single user or a group of users.
-The ZIP files (alerts_API-KEY.zip)  need to be in the same folder where the script is being execute from.
+The json files (alerts_API-KEY.json)  need to be in the same folder where the script is being execute from.
 
 Usage:
 ```python restore_alerts.py <sysdig-token/token-json-file>```
