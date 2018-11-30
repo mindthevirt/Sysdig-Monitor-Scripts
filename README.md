@@ -17,6 +17,21 @@ Usage:
 ```python restore_all_dashboards.py <sysdig-token/token-json-file>```
 
 
+## download_alerts.oy
+Download all alerts of a single user or a group of users.
+The ZIP files (alerts_API-KEY.zip)  need to be in the same folder where the script is being execute from.
+
+Usage:
+```python download_alerts.py <sysdig-token/token-json-file>```
+
+
+## restore_alerts.oy
+Restore all alerts of a single user or a group of users.
+The ZIP files (alerts_API-KEY.zip)  need to be in the same folder where the script is being execute from.
+
+Usage:
+```python restore_alerts.py <sysdig-token/token-json-file>```
+
 
 ## Formatting of Token Json File
 
