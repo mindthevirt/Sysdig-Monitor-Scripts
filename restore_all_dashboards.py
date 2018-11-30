@@ -35,7 +35,7 @@ for token in sdc_tokens:
     # For on-pmreises, add ssl_verify=False
     #
     sdclient = SdcClient(token, sdc_url='https://app.sysdigcloud.com')
-    dashboard_state_file = 'alerts' + token + '.zip'
+    dashboard_state_file = 'dashboards' + token + '.zip'
     zipf = zipfile.ZipFile(dashboard_state_file, 'r')
 
 
